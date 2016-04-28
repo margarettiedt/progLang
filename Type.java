@@ -1,0 +1,39 @@
+
+public enum Type
+{
+	SEMI("SEMI"), 
+	OPAREN("OPAREN"), 
+	CPAREN("CPAREN"), 
+	CBRACE("CBRACE"), 
+	OBRACE("OBRACE"), 
+	PERIOD("PERIOD"), 
+	COMMA("COMMA"), 
+	PLUS("PLUS"), 
+	MINUS("MINUS"), 
+	ASSIGN("ASSIGN"),
+	END_OF_INPUT("END_OF_INPUT"), 
+	VARIABLE("VARIABLE"), 
+	FUNCTION("FUNCTION"), 
+	ID("ID"),  
+	PLUS_EQUALS("PLUS_EQUALS"), 
+	MINUS_EQUALS("MINUS_EQUALS"), 
+	MULTIPLY("MULTIPLY"), 
+	DIVIDE("DIVIDE"), 
+	GREATERTHAN("GREATERTHAN"), 
+	LESSTHAN("LESSTHAN"), 
+	MOD("MOD"), 
+	INTEGER("INTEGER"),
+	STRING("STRING"),
+	NUMBER("NUMBER"),
+	WHILE("WHILE"),
+	IF("IF"),
+	ELSE("ELSE"),
+	PRINT("PRINT"),
+	UNKNOWN("UNKNOWN");
+	
+	private String name;
+	Type(String n) {this.name = n;}
+	public String toString() {return this.name.toString();}
+	
+}
+
